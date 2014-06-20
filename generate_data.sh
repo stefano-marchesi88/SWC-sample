@@ -2,5 +2,6 @@
 
 for i in {1..10};
 do
-    echo $i >> data1.txt
+    let j=i+1
+    echo $i $j >> data1.txt
 done
