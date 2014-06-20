@@ -2,5 +2,7 @@
 
 for i in {1..10};
 do
-    echo "jk=" $i
+    echo "j=" $i
 done
+
+#sleep 10000
