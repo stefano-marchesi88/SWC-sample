@@ -23,5 +23,5 @@ def fit_data(x,y,fmin_method,init_guess=np.array([0.,0.])):
     Fits data x,y to a sin wave using the fit method fimin_method. Returns fitted amplitude and frequency. Probably is unstable, so plot to check
     """
     def objective_func(A):
-        return sum((y-A)**2)
+        return sum((y-A[0])* np.sin(A[1]*x))**2 )
     return fmin_method(objective_func,init_guess)
